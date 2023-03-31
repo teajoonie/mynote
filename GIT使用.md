@@ -59,7 +59,7 @@ git rm [options] <filename>
 ### git 的glob模式字符匹配  
 ```
 \* 等同 *
-例如/etc/\*.txt和/etc/*.txt的意思一样
+例如/etc/\*.txt和/etc/*.txt的意思一样  
 ```
 ### git mv 改文件名  
 ```
