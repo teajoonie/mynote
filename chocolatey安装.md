@@ -21,12 +21,16 @@
 
 3. 如果输入Get-ExecutionPolicy后返回的是Restricted则运行`Set-ExecutionPolicy Bypass -Scope Process`来绕过策略  
 
-4. 绕过之后再输入`Get-ExecutionPolicy`运行，查看输出，如果输出结果为Bypass就欧克了，然后下一步  
+4. 绕过之后再输入`Get-ExecutionPolicy`运行，查看输出，如果输出结果为Bypass就欧克了，然后下一步 
+![1](picture/choco_install_1.png) 
 
 5. 输入运行下面这个,就欧克了  
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
+![2](picture/choco_install_2.png)
+***
+如果安装后安装neovim失败，提示说远程主机关闭此连接之类的，那就是开了代理，网速慢，下不下来，换个，不推荐关了，因为关了它有的还会去GitHub上拉取，避免有的拉取不下来又导致下载失败。
 ***
 更多信息访问官网<https://docs.chocolatey.org/>
 
