@@ -21,7 +21,7 @@
 
 3. 如果输入Get-ExecutionPolicy后返回的是Restricted则运行`Set-ExecutionPolicy Bypass -Scope Process`来绕过策略  
 
-4. 绕过之后再输入`Get-ExecutionPolicy`运行，查看输出，如果输出结果为Bypass就欧克了，然后下一步 
+4. 绕过之后再输入`Get-ExecutionPolicy`运行，查看输出，如果输出结果为Bypass就欧克了，然后下一步. 
 ![](https://github.com/teajoonie/mynote/blob/main/picture/choco_install_1.png) 
 
 5. 输入运行下面这个,就欧克了  
